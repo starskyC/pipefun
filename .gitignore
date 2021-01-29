@@ -1,0 +1,4 @@
+dist
+build
+pypipe.egg-info
+__pycache__
