@@ -2,3 +2,4 @@ dist
 build
 pypipe.egg-info
 __pycache__
+.vscode
