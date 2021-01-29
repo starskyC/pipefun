@@ -1,0 +1,8 @@
+README.md
+setup.py
+pypipe/Pipable.py
+pypipe/__init__.py
+pypipe.egg-info/PKG-INFO
+pypipe.egg-info/SOURCES.txt
+pypipe.egg-info/dependency_links.txt
+pypipe.egg-info/top_level.txt

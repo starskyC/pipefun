@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pypipe
+Version: 0.0.1
+Summary: a lightweight, no dependency, python package that enables function pipings.
+Home-page: UNKNOWN
+Author: starskyC
+Author-email: cl2004_0123@aliyun.com
+License: MIT
+Description: # PyPipe
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
