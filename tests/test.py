@@ -2,8 +2,8 @@ from os import getcwd
 import sys
 sys.path.append(getcwd())
 
-from pypipe.Pipable import Pipable, out
-from pypipe.Functionals import add, square, curry
+from pipefun.Pipable import Pipable, out
+from pipefun.Functionals import add, square, curry
 
 x = Pipable(3)
 

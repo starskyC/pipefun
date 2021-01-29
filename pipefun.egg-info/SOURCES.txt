@@ -1,0 +1,9 @@
+README.md
+setup.py
+pipefun/Functionals.py
+pipefun/Pipable.py
+pipefun/__init__.py
+pipefun.egg-info/PKG-INFO
+pipefun.egg-info/SOURCES.txt
+pipefun.egg-info/dependency_links.txt
+pipefun.egg-info/top_level.txt
