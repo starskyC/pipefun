@@ -1,9 +1,17 @@
+from Functionals import mapFunc
+
 out = lambda *xs: xs 
 
 class Pipable():
 	def __init__(self, *val):
 		self.__vals = val
 		self.__arg_count = 1
+	
+
+	def __repr__(self):
+		return 'Pipable(' + ', '.join(mapFunc(repr)(self.__vals)) + ')'
+
+	__str__ = __repr__
 	
 	# ~x -> tuple
 	def __invert__(self):
