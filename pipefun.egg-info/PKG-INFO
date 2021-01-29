@@ -1,24 +1,24 @@
 Metadata-Version: 2.1
 Name: pipefun
-Version: 0.0.1
+Version: 0.0.2
 Summary: A lightweighted package that contains pipe operators and functional tools
 Home-page: https://github.com/pypa/sampleproject
 Author: starskyC
 Author-email: cl2004_0123@aliyun.com
 License: UNKNOWN
-Description: # PyPipe
+Description: # Pipefun
         
         A simple, lightweighted, zero dependency python piping package.
         
         ## Install
         ```bash
-        pip install pypipe
+        pip install pipefun
         ```
         
         ## Usage
         ```python
-        from pypipe import Pipable, out
-        from pypipe.Functionals import square
+        from pipefun import Pipable, out
+        from pipefun.Functionals import square
         
         add_to = lambda a: lambda b: a + b # a curried **add** function
         
@@ -67,7 +67,7 @@ Description: # PyPipe
         ### Let's discard the `~` operator
         There is a special function in Pipable package that do nothing. If a Pipable is piped into it, same thing will happen with what the `~` operator do.
         ```python
-        from pypipe import Pipable, out
+        from pipefun import Pipable, out
         
         x = Pipable(2)
         

@@ -1,16 +1,16 @@
-# PyPipe
+# Pipefun
 
 A simple, lightweighted, zero dependency python piping package.
 
 ## Install
 ```bash
-pip install pypipe
+pip install pipefun
 ```
 
 ## Usage
 ```python
-from pypipe import Pipable, out
-from pypipe.Functionals import square
+from pipefun import Pipable, out
+from pipefun.Functionals import square
 
 add_to = lambda a: lambda b: a + b # a curried **add** function
 
@@ -59,7 +59,7 @@ print(~out) # 14
 ### Let's discard the `~` operator
 There is a special function in Pipable package that do nothing. If a Pipable is piped into it, same thing will happen with what the `~` operator do.
 ```python
-from pypipe import Pipable, out
+from pipefun import Pipable, out
 
 x = Pipable(2)
 
