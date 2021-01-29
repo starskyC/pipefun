@@ -7,12 +7,20 @@ class Pipable():
 		self.__vals = val
 		self.__arg_count = 1
 	
+	def setvals(self, *vals, /, force=False):
+		if self.__arg_count != len(vals):
+			if force:
+				self.__arg_count = len(vals)
+			else:
+				raise Exception(f'Replacing {self.__arg_count} pipes with {len(vals)} values')
+		
+		self.__vals = vals
 
 	def __repr__(self):
 		return 'Pipable(' + ', '.join(mapFunc(repr)(self.__vals)) + ')'
 
 	__str__ = __repr__
-	
+
 	# ~x -> tuple
 	def __invert__(self):
 		return self.__vals
