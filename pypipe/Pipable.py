@@ -1,6 +1,6 @@
 from Functionals import mapFunc
 
-out = lambda *xs: xs 
+out = lambda *xs: pass
 
 class Pipable():
 	def __init__(self, *val):
