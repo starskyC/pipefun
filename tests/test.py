@@ -1,11 +1,12 @@
-from Pipable import Pipable, out
+import sys
+sys.path.append('..')
+
+from pypipe.Pipable import Pipable, out
+from pypipe.Functionals import add, square, curry
 
 x = Pipable(3)
 
-square = lambda x: x**2
-add = lambda a, b: a + b
-
-add_currying = lambda a: lambda b: a + b
+add_currying = curry(2)(add)
 
 print( x >> add_currying(3) >> square >> out ) # 36
 
